@@ -11,12 +11,13 @@ app.get('/test', function(request, response) {
 
 const favoritePlaces = require('./FavoritePlaces.json');
 
+// creating a route for the server json data
 app.get('/api/favorite-places', (req, res) => {
 	res.json(favoritePlaces);
 });
 
 
-
+// start the server
 app.listen(port, function() {
 	console.log("Server is running at http://localhost:3000/")
 })
