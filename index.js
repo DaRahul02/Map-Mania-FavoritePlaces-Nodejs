@@ -9,6 +9,14 @@ app.get('/test', function(request, response) {
 	response.send('Node.js and Express running on port='+port)
 })
 
+const favoritePlaces = require('./FavoritePlaces.json');
+
+app.get('/api/favorite-places', (req, res) => {
+	res.json(favoritePlaces);
+});
+
+
+
 app.listen(port, function() {
 	console.log("Server is running at http://localhost:3000/")
 })
