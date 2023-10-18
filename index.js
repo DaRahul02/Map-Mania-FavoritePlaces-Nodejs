@@ -10,7 +10,7 @@ app.get('/test', function(request, response) {
 })
 
 // Load your JSON data
-const favoritePlaces = require('./FavoritePlaces.json');
+const favoritePlaces = require('./client/FavoritePlaces.json');
 
 // Create a route that serves the JSON data
 app.get('/api/favorite-places', (req, res) => {
