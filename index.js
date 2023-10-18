@@ -9,11 +9,12 @@ app.get('/test', function(request, response) {
 	response.send('Node.js and Express running on port='+port)
 })
 
+// Load your JSON data
 const favoritePlaces = require('./FavoritePlaces.json');
 
-// creating a route for the server json data
+// Create a route that serves the JSON data
 app.get('/api/favorite-places', (req, res) => {
-	res.json(favoritePlaces);
+  res.json(favoritePlaces);
 });
 
 
