@@ -1,4 +1,4 @@
-var markers = [
+[
     {
       coords:{lat:19.8987,lng:-155.6659},
       iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
